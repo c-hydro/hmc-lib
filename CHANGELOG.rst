@@ -2,6 +2,26 @@
 Changelog
 =========
 
+Version 3.3.0 [2025-11-13]
+**************************
+- ADD: groundwater initialization with a fill level percentage (only when thickness raster is available);
+- FIX: incorrect configuration in the channel network mode;
+- FIX: deep-losses activation flag;
+- FIX: groundwater subflow at the outlet cell (unit units);
+- FIX: numeric limits uc, uh in the channel fraction.
+
+Version 3.2.0 [2024-11-04]
+**************************
+- ADD: new (optional) parametrization of soil and groundwater;
+- ADD: new (optional) soil infiltration rate dependency on the soil saturation degree (only with new soil parametrization);
+- ADD: add the possibility of constraining the actual evapotraspiration only by soil water availability;
+- ADD: rescaling factor for hypodermic flow ratio;
+- ADD: add the possibility of providing the KSatRatio as a spatial map (domain.ksatratio.txt);
+- FIX: management of the domain mask and of the dem values minor than 0;
+- FIX: fixed a bug in the mass balance of the soil;
+- FIX: complete removal of the Ct-WP;
+- UPD: updated model license to EUPL 1.2
+
 Version 3.1.6 [2022-06-23]
 **************************
 - ADD: optional module to compute irrigation water requirements;
